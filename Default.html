@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>IBM News</title>
+    </head>
+    <body>
+        <p>Welcome to IBM News</p> 
+        <p>
+        <strong>New York Times</strong>
+           </p>
+        <p class="newyorktimes"></p>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+
+        var url = "https://api.nytimes.com/svc/archive/v1/2016//1.json";
+        url += '?' + $.param({
+            'api-key': "1957e535b0e84b7495166a3b4fd6e2af"
+        });
+        $.ajax({
+          url: url,
+          method: 'GET'
+        }).done(function(result){
+            $(".newyorktimes").innerHTML="TEST"
+        }).fail(function(err) {
+          throw err;
+        });
+
+
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      
+    </body>
+</html>
