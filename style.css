@@ -1,0 +1,71 @@
+body {
+  background-color: white;
+}
+
+
+* {
+  box-sizing: initial;
+}
+
+.search_box button {
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid black;
+	flex: flex-basis 100;
+	margin: -10px;
+	margin: 0px 0px:
+	border-left: none;
+}
+
+.search_box input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+	margin: 0px;
+  margin: 7px -5px 0px 0px;
+	down: -20px
+}
+
+.search_box button:hover {
+  background: #0b7dda;
+	cursor: pointer;
+}
+
+.search_box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ibm {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ibm_logo {
+	height: 42px;
+	width: 100px;
+	margin: 20px;
+	
+}
+
+
+.headline {
+	text-align:center;
+	
+}
+
+.main_heading {
+	color: #3333ff;
+	font-size:45px;
+  font-family:helvetica;
+	text-align:center;
+} 
+
+.main_headline {
+	text-align:center;
+}
