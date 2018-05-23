@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+			<title>US News - Loaded from JSON</title>
+
+        <p>IBM News loaded from JSON</p>
+        <p>Prototype 1 - US News (not Live JSON)</p>
+        <p><strong>Issue:</strong> Ideally in order to get the latest news we need to extract Live JSON into HTML. </p>
+		</head>
+		<body>
+			<table border=1>
+				<thead>
+					<tr>
+						<th>status</th>
+						<th>totalResults</th>
+						<th>articles.0.source.id</th>
+						<th>articles.0.source.name</th>
+						<th>articles.0.author</th>
+						<th>articles.0.title</th>
+						<th>articles.0.description</th>
+						<th>articles.0.url</th>
+						<th>articles.0.urlToImage</th>
+						<th>articles.0.publishedAt</th>
+						<th>articles.1.source.id</th>
+						<th>articles.1.source.name</th>
+						<th>articles.1.author</th>
+						<th>articles.1.title</th>
+						<th>articles.1.description</th>
+						<th>articles.1.url</th>
+						<th>articles.1.urlToImage</th>
+						<th>articles.1.publishedAt</th>
+						<th>articles.2.source.id</th>
+						<th>articles.2.source.name</th>
+						<th>articles.2.author</th>
+						<th>articles.2.title</th>
+						<th>articles.2.description</th>
+						<th>articles.2.url</th>
+						<th>articles.2.urlToImage</th>
+						<th>articles.2.publishedAt</th>
+						<th>articles.3.source.id</th>
+						<th>articles.3.source.name</th>
+						<th>articles.3.author</th>
+						<th>articles.3.title</th>
+						<th>articles.3.description</th>
+						<th>articles.3.url</th>
+						<th>articles.3.urlToImage</th>
+						<th>articles.3.publishedAt</th>
+						<th>articles.4.source.id</th>
+						<th>articles.4.source.name</th>
+						<th>articles.4.author</th>
+						<th>articles.4.title</th>
+						<th>articles.4.description</th>
+						<th>articles.4.url</th>
+						<th>articles.4.urlToImage</th>
+						<th>articles.4.publishedAt</th>
+						<th>articles.5.source.id</th>
+						<th>articles.5.source.name</th>
+						<th>articles.5.author</th>
+						<th>articles.5.title</th>
+						<th>articles.5.description</th>
+						<th>articles.5.url</th>
+						<th>articles.5.urlToImage</th>
+						<th>articles.5.publishedAt</th>
+						<th>articles.6.source.id</th>
+						<th>articles.6.source.name</th>
+						<th>articles.6.author</th>
+						<th>articles.6.title</th>
+						<th>articles.6.description</th>
+						<th>articles.6.url</th>
+						<th>articles.6.urlToImage</th>
+						<th>articles.6.publishedAt</th>
+						<th>articles.7.source.id</th>
+						<th>articles.7.source.name</th>
+						<th>articles.7.author</th>
+						<th>articles.7.title</th>
+						<th>articles.7.description</th>
+						<th>articles.7.url</th>
+						<th>articles.7.urlToImage</th>
+						<th>articles.7.publishedAt</th>
+						<th>articles.8.source.id</th>
+						<th>articles.8.source.name</th>
+						<th>articles.8.author</th>
+						<th>articles.8.title</th>
+						<th>articles.8.description</th>
+						<th>articles.8.url</th>
+						<th>articles.8.urlToImage</th>
+						<th>articles.8.publishedAt</th>
+						<th>articles.9.source.id</th>
+						<th>articles.9.source.name</th>
+						<th>articles.9.author</th>
+						<th>articles.9.title</th>
+						<th>articles.9.description</th>
+						<th>articles.9.url</th>
+						<th>articles.9.urlToImage</th>
+						<th>articles.9.publishedAt</th>
+						<th>articles.10.source.id</th>
+						<th>articles.10.source.name</th>
+						<th>articles.10.author</th>
+						<th>articles.10.title</th>
+						<th>articles.10.description</th>
+						<th>articles.10.url</th>
+						<th>articles.10.urlToImage</th>
+						<th>articles.10.publishedAt</th>
+						<th>articles.11.source.id</th>
+						<th>articles.11.source.name</th>
+						<th>articles.11.author</th>
+						<th>articles.11.title</th>
+						<th>articles.11.description</th>
+						<th>articles.11.url</th>
+						<th>articles.11.urlToImage</th>
+						<th>articles.11.publishedAt</th>
+						<th>articles.12.source.id</th>
+						<th>articles.12.source.name</th>
+						<th>articles.12.author</th>
+						<th>articles.12.title</th>
+						<th>articles.12.description</th>
+						<th>articles.12.url</th>
+						<th>articles.12.urlToImage</th>
+						<th>articles.12.publishedAt</th>
+						<th>articles.13.source.id</th>
+						<th>articles.13.source.name</th>
+						<th>articles.13.author</th>
+						<th>articles.13.title</th>
+						<th>articles.13.description</th>
+						<th>articles.13.url</th>
+						<th>articles.13.urlToImage</th>
+						<th>articles.13.publishedAt</th>
+						<th>articles.14.source.id</th>
+						<th>articles.14.source.name</th>
+						<th>articles.14.author</th>
+						<th>articles.14.title</th>
+						<th>articles.14.description</th>
+						<th>articles.14.url</th>
+						<th>articles.14.urlToImage</th>
+						<th>articles.14.publishedAt</th>
+						<th>articles.15.source.id</th>
+						<th>articles.15.source.name</th>
+						<th>articles.15.author</th>
+						<th>articles.15.title</th>
+						<th>articles.15.description</th>
+						<th>articles.15.url</th>
+						<th>articles.15.urlToImage</th>
+						<th>articles.15.publishedAt</th>
+						<th>articles.16.source.id</th>
+						<th>articles.16.source.name</th>
+						<th>articles.16.author</th>
+						<th>articles.16.title</th>
+						<th>articles.16.description</th>
+						<th>articles.16.url</th>
+						<th>articles.16.urlToImage</th>
+						<th>articles.16.publishedAt</th>
+						<th>articles.17.source.id</th>
+						<th>articles.17.source.name</th>
+						<th>articles.17.author</th>
+						<th>articles.17.title</th>
+						<th>articles.17.description</th>
+						<th>articles.17.url</th>
+						<th>articles.17.urlToImage</th>
+						<th>articles.17.publishedAt</th>
+						<th>articles.18.source.id</th>
+						<th>articles.18.source.name</th>
+						<th>articles.18.author</th>
+						<th>articles.18.title</th>
+						<th>articles.18.description</th>
+						<th>articles.18.url</th>
+						<th>articles.18.urlToImage</th>
+						<th>articles.18.publishedAt</th>
+						<th>articles.19.source.id</th>
+						<th>articles.19.source.name</th>
+						<th>articles.19.author</th>
+						<th>articles.19.title</th>
+						<th>articles.19.description</th>
+						<th>articles.19.url</th>
+						<th>articles.19.urlToImage</th>
+						<th>articles.19.publishedAt</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>ok</td>
+						<td>20</td>
+						<td></td>
+						<td>Nzherald.co.nz</td>
+						<td></td>
+						<td>German city to ban some diesel cars to combat air pollution</td>
+						<td>BERLIN (AP) — Some diesel cars will be banned in Hamburg to combat air pollution, officials of the northern German city said Wednesday. Parts</td>
+						<td>https://www.nzherald.co.nz/business/news/article.cfm?c_id=3&objectid=12057316</td>
+						<td>/pb/resources/assets/img/fallback-promo-image.png?token=false</td>
+						<td>2018-05-23T09:11:15Z</td>
+						<td></td>
+						<td>Qz.com</td>
+						<td>Lianna Brinded</td>
+						<td>Britain's biggest high-street clothing shop has sounded the death-knell warning for the industry</td>
+						<td>It's shutting 100 stores and putting thousands of jobs at risk as it fights the threat of online shopping.</td>
+						<td>https://qz.com/1285529/marks-spencer-results-and-store-closures-reflect-the-uk-high-streets-health/</td>
+						<td>https://qz.com/wp-content/uploads/2018/05/marks-spencer-results-store-closures1.jpg?quality=80&strip=all&w=1600</td>
+						<td>2018-05-23T08:20:36Z</td>
+						<td>the-wall-street-journal</td>
+						<td>The Wall Street Journal</td>
+						<td>Riva Gold</td>
+						<td>Global Stocks Decline as Trade Tensions Linger</td>
+						<td>Global stocks extended declines as investors continued to assess potential trade tensions, the possible cancellation of a June summit with North Korea and a fall in commodity prices.</td>
+						<td>https://www.wsj.com/articles/global-stocks-decline-as-trade-tensions-linger-1527061037</td>
+						<td>https://images.wsj.net/im-11617/social</td>
+						<td>2018-05-23T07:55:25Z</td>
+						<td>bloomberg</td>
+						<td>Bloomberg</td>
+						<td>Anjani Trivedi</td>
+						<td>Dark Side of China's Car Tariff Cuts</td>
+						<td>A more open market means lower prices.</td>
+						<td>https://www.bloomberg.com/view/articles/2018-05-23/china-s-tariff-cuts-darken-carmaker-profit-hopes</td>
+						<td>https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ixhLh0JFNR70/v1/1200x800.jpg</td>
+						<td>2018-05-23T06:39:12Z</td>
+						<td>nbc-news</td>
+						<td>NBC News</td>
+						<td>Phil Helsel, Associated Press</td>
+						<td>Las Vegas casino workers vote to authorize strike</td>
+						<td>Thousands of casino and hotel workers in Las Vegas voted to authorize a strike if there is no agreement in contract negotiations before the end of May.</td>
+						<td>https://www.nbcnews.com/business/business-news/las-vegas-casino-workers-vote-authorize-strike-n876651</td>
+						<td>https://media1.s-nbcnews.com/j/newscms/2018_21/2441796/180522-las-vegas-2016-ac-1146p_f753ba686a0407cfc7edb0826a2e57a6.1200;630;7;70;5.jpg</td>
+						<td>2018-05-23T05:03:58Z</td>
+						<td>the-wall-street-journal</td>
+						<td>The Wall Street Journal</td>
+						<td>Mayumi Negishi</td>
+						<td>SoftBank to Sell Full Flipkart Stake to Walmart</td>
+						<td>The operator of the world’s largest technology fund—which holds a 21% stake in Flipkart—had been delaying a decision to participate in Walmart’s $16 billion deal to take control of India’s largest e-commerce company.</td>
+						<td>https://www.wsj.com/articles/softbank-to-sell-full-flipkart-stake-to-walmart-1527043943</td>
+						<td>https://si.wsj.net/public/resources/images/B3-AN532_0523SO_SOC_20180522222359.jpg</td>
+						<td>2018-05-23T02:55:27Z</td>
+						<td></td>
+						<td>Nypost.com</td>
+						<td>Danielle Furfaro</td>
+						<td>MTA plan to fix subways would cause a decade of delays</td>
+						<td>The MTA is set to unveil a plan to fix the city’s rotting subway signal system that would cost $37 billion — and take a decade of increased night and weekend closures to get done, transit sources t…</td>
+						<td>https://nypost.com/2018/05/22/mta-plans-decade-of-hell-to-finally-fix-subways/</td>
+						<td>https://thenypost.files.wordpress.com/2018/05/mta-decade-of-repair-subway-system.jpg?quality=90&strip=all&w=1200</td>
+						<td>2018-05-23T01:55:20Z</td>
+						<td></td>
+						<td>Abc7news.com</td>
+						<td></td>
+						<td>DRONEVIEW7: Get a sky-high view of Salesforce Tower</td>
+						<td>Salesforce Tower is an unmistakable giant, topping out at 1,070 feet tall -- more than 200 feet taller than the Transamerica Pyramid, the previous tallest building in San Francisco.</td>
+						<td>http://abc7news.com/society/droneview7-get-a-sky-high-view-of-salesforce-tower/3509071/</td>
+						<td>http://cdn.abclocal.go.com/content/kgo/images/cms/3509014_1280x720.jpg</td>
+						<td>2018-05-23T01:41:15Z</td>
+						<td>cnn</td>
+						<td>CNN</td>
+						<td>Danielle Wiener-Bronner</td>
+						<td>10 McDonald's employees allege sexual harassment</td>
+						<td>Ten female Mcdonald's employees have filed sexual harassment complaints against the company over the past week.</td>
+						<td>http://money.cnn.com/2018/05/22/news/companies/mcdonalds-sexual-harassment/index.html</td>
+						<td>https://i2.cdn.turner.com/money/dam/assets/180522183648-mcdonalds-780x439.jpg</td>
+						<td>2018-05-23T01:11:00Z</td>
+						<td>reuters</td>
+						<td>Reuters</td>
+						<td>Naveen Thukral</td>
+						<td>Oil prices slip on potential easing of OPEC supply curbs</td>
+						<td>Oil prices eased on Wednesday as the possibility of higher OPEC output weighing on the market, although geopolitical risks are expected to keep prices near multi-year highs.</td>
+						<td>https://www.reuters.com/article/us-global-oil/oil-prices-slip-on-potential-easing-of-opec-supply-curbs-idUSKCN1IO01M</td>
+						<td>https://s4.reutersmedia.net/resources/r/?m=02&d=20180523&t=2&i=1264972276&w=1200&r=LYNXNPEE4M00T</td>
+						<td>2018-05-23T00:35:14Z</td>
+						<td>the-wall-street-journal</td>
+						<td>The Wall Street Journal</td>
+						<td>Ryan Tracy</td>
+						<td>How Congress Rolled Back Banking Rules in a Rare Bipartisan Deal</td>
+						<td>A strategy to seek modest changes in the Dodd-Frank banking law, agreed to in private by Sen. Mike Crapo and former Trump economic adviser Gary Cohn, paid dividends as Congress passed a bipartisan bill on Tuesday.</td>
+						<td>https://www.wsj.com/articles/how-congress-rolled-back-banking-rules-in-a-rare-bipartisan-deal-1527030512</td>
+						<td>https://images.wsj.net/im-11573/social</td>
+						<td>2018-05-22T23:09:37Z</td>
+						<td></td>
+						<td>Cnet.com</td>
+						<td>Abrar Al-Heeti</td>
+						<td>Amazon banning shoppers who return items too often</td>
+						<td>Don't go crazy with free returns.</td>
+						<td>https://www.cnet.com/news/amazon-is-banning-shoppers-who-make-too-many-returns/</td>
+						<td>https://cnet2.cbsistatic.com/img/xxIcXnEtgmAKyZNWU76SJscy-1U=/670x503/2018/05/22/18b020db-66e0-43f7-a6ad-b6df877fde87/gettyimages-460515134.jpg</td>
+						<td>2018-05-22T22:54:44Z</td>
+						<td></td>
+						<td>Cruisecritic.com</td>
+						<td></td>
+						<td>Carnival Cruise Delayed; Passengers to Receive OBC, Refund and Free Concert</td>
+						<td>Cruisers on Carnival Miracle's May 27 sailing, which was delayed and will depart May 29 from Tampa, are receiving $200 onboard credit, a prorated refund of their fare paid and a free Carnival Live concert as compensation for the loss of vacation time.</td>
+						<td>https://www.cruisecritic.com/news/news.cfm?ID=8656</td>
+						<td></td>
+						<td>2018-05-22T21:47:15Z</td>
+						<td>usa-today</td>
+						<td>USA Today</td>
+						<td>Paul Davidson</td>
+						<td>Jobs: 74% of adults say they're OK financially, up from 70%</td>
+						<td>Nearly 75% of Americans are doing ok financially or living comfortably, up from 70% a year earlier. But 40% couldn't pay a $400 emergency expense.</td>
+						<td>https://www.usatoday.com/story/money/2018/05/22/74-adults-least-doing-ok-financially-up-70-year-ago/632757002/</td>
+						<td>https://www.gannett-cdn.com/-mm-/cecc8b8c9198193250b9e757420d497b64572afc/c=0-30-580-356&r=x1683&c=3200x1680/local/-/media/2018/03/29/USATODAY/usatsports/team-of-happy-workers-smiling_large.jpg</td>
+						<td>2018-05-22T20:38:58Z</td>
+						<td></td>
+						<td>Bizjournals.com</td>
+						<td></td>
+						<td>FDIC: Georgia bank profits soared early in 2018</td>
+						<td></td>
+						<td>https://www.bizjournals.com/atlanta/news/2018/05/22/fdic-georgia-bank-profits-soared-early-in-2018.html</td>
+						<td></td>
+						<td>2018-05-22T18:26:25Z</td>
+						<td>usa-today</td>
+						<td>USA Today</td>
+						<td>Matthew Diebel</td>
+						<td>Publix supermarket in South Carolina censors high school graduate's 'Summa Cum Laude' cake</td>
+						<td>Software at a Publix in West Ashley, S.C., refused to include the word “Cum” in the decoration on top of the cake because it deemed it to be profane. A manager from Publix later apologized and offered a refund.</td>
+						<td>https://www.usatoday.com/story/news/nation/2018/05/22/publix-market-south-carolina-censors-grads-summa-cum-laude-cake/631829002/</td>
+						<td>https://www.gannett-cdn.com/-mm-/83d065e93477f701b3a325db87b2634014b3fb59/c=0-292-1797-1308&r=x1683&c=3200x1680/local/-/media/2015/03/24/USATODAY/USATODAY/635628025699675796-Publix-032415.jpg</td>
+						<td>2018-05-22T18:04:56Z</td>
+						<td></td>
+						<td>Chron.com</td>
+						<td>Gabrielle Banks</td>
+						<td>Buc-ee's wins federal court trademark fight against competitor Choke Canyon</td>
+						<td>A federal jury Tuesday ended a trademark battle between two titans of the Texas travel stop industry, finding that a grinning green gator had unlawfully invaded a toothy beaver's turf.</td>
+						<td>https://www.chron.com/news/houston-texas/houston/article/Buc-ee-s-beaver-trademark-texas-choke-canyon-gator-12934353.php</td>
+						<td>https://s.hdnux.com/photos/73/30/62/15568029/3/rawImage.png</td>
+						<td>2018-05-22T17:10:00Z</td>
+						<td>the-new-york-times</td>
+						<td>The New York Times</td>
+						<td>http://www.nytimes.com/by/nick-wingfield</td>
+						<td>Amazon Pushes Facial Recognition to Police. Critics See Surveillance Risk.</td>
+						<td>More than two dozen civil rights organizations asked the tech giant to stop selling its image recognition system to law enforcement agencies.</td>
+						<td>https://www.nytimes.com/2018/05/22/technology/amazon-facial-recognition.html</td>
+						<td>https://static01.nyt.com/images/2018/05/23/business/23AMAZON/23AMAZON-facebookJumbo.jpg</td>
+						<td>2018-05-22T16:34:05Z</td>
+						<td></td>
+						<td>Zacks.com</td>
+						<td>Zacks Investment Research</td>
+						<td>On Chinese Concessions, Small Caps and Lowe's New CEO</td>
+						<td>All major indexes closed in the green yesterday, and look to build modestly on those levels in today's pre-market.</td>
+						<td>https://www.zacks.com/stock/news/304488/on-chinese-concessions-small-caps-and-lowes-new-ceo</td>
+						<td>https://staticx-tuner.zacks.com/images/articles/main/58/1526995687.jpg</td>
+						<td>2018-05-22T13:30:19Z</td>
+						<td>cnbc</td>
+						<td>CNBC</td>
+						<td>Bob Pisani</td>
+						<td>NYSE's new president takes on challenges as exchanges compete for IPOs, fees</td>
+						<td>Stacey Cunningham's elevation to president of the NYSE Group represents a full circle for one of the few women who have worked on the exchange floor.</td>
+						<td>https://www.cnbc.com/2018/05/22/nyses-new-president-takes-on-challenges.html</td>
+						<td>https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/05/22/105223450-GettyImages-912756340.1910x1000.jpg</td>
+						<td>2018-05-22T13:27:00Z</td>
+					</tr>
+				</tbody>
+			</table>
+		</body>
+	</html>

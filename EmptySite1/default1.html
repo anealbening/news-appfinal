@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+     <script>
+      // Built by LucyBot. www.lucybot.com
+     var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+     url += '?' + $.param({
+    'api-key': "0bdf12ee1b8d4b6baa35e83deac18815",
+    'q': "Trump"
+    });
+    $.ajax({
+    url: url,
+    method: 'GET',
+    }).done(function(result) {
+  console.log(result);
+    }).fail(function(err) {
+  throw err;
+    });
+
+
+     </script>
+    </body>
+</html>
