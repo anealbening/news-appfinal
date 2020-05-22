@@ -1,2 +1,2 @@
 # news-appfinal
-News App by Jake, Kam, Aneal
+News App by Aneal
